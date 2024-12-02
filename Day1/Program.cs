@@ -1,12 +1,14 @@
 ﻿// https://adventofcode.com/2024/day/1
 // Author: David Langr
 
-var file = File.ReadLines("Day1.txt");
+var file = File.ReadLines("input.txt");
 var fileArray = file as string[] ?? file.ToArray();
 
-var arrays = new List<int[]>();
-arrays.Add(new int[fileArray.Length]);
-arrays.Add(new int[fileArray.Length]);
+var arrays = new List<int[]>
+{
+    new int[fileArray.Length],
+    new int[fileArray.Length]
+};
 
 var sortedDiff = new int[fileArray.Length];
 
